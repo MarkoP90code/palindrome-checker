@@ -26,3 +26,8 @@ const palindromeCheck = () => {
     }
     
 checkButton.addEventListener("click", palindromeCheck);             // if i added this onclick ="palindromeCheck()" to the butto it would work the same.
+input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        palindromeCheck();
+    }
+})
